@@ -51,7 +51,6 @@
 			<header>
 				<div class="cd-title">
 					<h2>Contact</h2>
-					<span>Some text here</span>
 				</div>
 
 				<a href="#contact-content" class="cd-scroll">Scroll Down</a>
@@ -78,8 +77,17 @@
 	</main> <!-- .cd-main -->
 
 	<div id="cd-loading-bar" data-scale="1" class="contact"></div> <!-- lateral loading bar -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+	$(function() {
+		$("#accordion").accordion({
+			collapsible: true
+		});
+	});
+	</script>
 </body>
 </html>

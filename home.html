@@ -5,16 +5,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='css/googlefont.css' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css">
-	<! CSS reset >
-	<link rel="stylesheet" href="css/style.css">
-	<! Resource style >
-	<script src="js/modernizr.js"></script>
-	<! Modernizr >
 
 	<title>Animated Page Transition #2 | CodyHouse</title>
+
+
+	<link href='css/googlefont.css' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Resource style -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Resource jQuery -->
+	<script src="js/jquery-ui.js"></script>
+
+
+
+
+
 	<script>
 		var toggleGurmukhi = function() {
 			$('.gurmukhi').toggle(300);
@@ -25,7 +46,18 @@
 		var toggleTranslit = function() {
 			$('.translit').toggle(300);
 		};
+
+		$(function() {
+			if ($("#accordion")) {
+				$("#accordion").accordion({
+					collapsible: true
+				});
+			}
+		});
 	</script>
+
+
+
 </head>
 
 <body>
@@ -56,35 +88,9 @@
 				</a>
 			</li>
 
-			<li>
-				<a href="#0" data-menu="vocabulary">
-					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
-						<g transform="translate(0, 0)">
-							<rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect>
-							<rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
-							<rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
-							<rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
-							<rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
-						</g>
-					</svg>
-					vocabulary
-				</a>
-			</li>
 
-			<li>
-				<a href="#0" data-menu="contact">
-					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
-						<g transform="translate(0, 0)">
-							<polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 19,7 12,14 5,7 " stroke-linejoin="miter"></polyline>
-							<rect x="1" y="3" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="18" stroke-linejoin="miter"></rect>
-							<line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="15" x2="5" y2="17" stroke-linejoin="miter"></line>
-							<line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="15" x2="19" y2="17" stroke-linejoin="miter"></line>
-						</g>
-					</svg>
-					</svg>
-					Contact
-				</a>
-			</li>
+
+
 		</ul>
 	</nav>
 	<! .cd-side-navigation >
@@ -100,520 +106,507 @@
 			</header>
 
 			<div class="cd-content" id="index-content">
-
-				<button onclick="toggleGurmukhi()">Gurmukhi</button>
-				<button onclick="toggleTranslation()">Translation</button>
-				<button onclick="toggleTranslit()">Transliteration</button>
+				<h3>Logistical Vocabulatory
+				</h3>
 				<p>
+					<button onclick="toggleGurmukhi()">Gurmukhi</button>
+					<button onclick="toggleTranslation()">Translation</button>
+					<button onclick="toggleTranslit()">Transliteration</button>
 
-					<table>
-						<tr>
-							<td class="translation">
-								English
-							</td>
-							<td class="gurmukhi">
-								Gurmukhi
-							</td>
-							<td class="translit">
-								Transliteration
-							</td>
-						</tr>
-						<tr>
-							<td class="translation">Head
-							</td>
-							<td class="gurmukhi">ਸਿਰ
-							</td>
-							<td class="translit">sir
-							</td>
-						</tr>
-						<tr>
-							<td class="translation">
-							</td>
-							<td class="gurmukhi">
-							</td>
-							<td class="translit">
-							</td>
-						</tr>
-						<tr>
-							<td class="translation">Neck
-							</td>
-							<td class="gurmukhi">ਗਰਦਨ (ਧੋਣ)
-							</td>
-							<td class="translit">gardhan (thon)
-							</td>
-						</tr>
-						<tr>
-							<td class="translation">Shoulders
-							</td>
-							<td class="gurmukhi">ਮੋਢੇ
-							</td>
-							<td class="translit">modhe
-							</td>
-						</tr>
+					<input type="text" id="search" placeholder="Type to search">
 
+					<table id="table" class="table table-hover">
+						<thead>
+							<tr>
+								<th class="translation">
+									English
+								</th>
+								<th class="gurmukhi">
+									Gurmukhi
+								</th>
+								<th class="translit">
+									Transliteration
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="translation">Head
+								</td>
+								<td class="gurmukhi">ਸਿਰ
+								</td>
+								<td class="translit">sir
+								</td>
+							</tr>
 
+							<tr>
+								<td class="translation">Neck
+								</td>
+								<td class="gurmukhi">ਗਰਦਨ (ਧੋਣ)
+								</td>
+								<td class="translit">gardhan (thon)
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Shoulders
+								</td>
+								<td class="gurmukhi">ਮੋਢੇ
+								</td>
+								<td class="translit">modhe
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Chest
+								</td>
+								<td class="gurmukhi">ਛਾਤੀ
+								</td>
+								<td class="translit">chaati
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Stomach
+								</td>
+								<td class="gurmukhi">ਪੇਟ /ਢਿੱਡ
+								</td>
+								<td class="translit">Paet/thid
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Elbow
+								</td>
+								<td class="gurmukhi">ਕੂਹਣੀ
+								</td>
+								<td class="translit">khonee
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Arm
+								</td>
+								<td class="gurmukhi">ਬਾਂਹ / ਬਾਜੂ
+								</td>
+								<td class="translit">bah
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Chest
-							</td>
-							<td class="gurmukhi">ਛਾਤੀ
-							</td>
-							<td class="translit">chaati
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Hand
+								</td>
+								<td class="gurmukhi">ਹੱਥ
+								</td>
+								<td class="translit">hath
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Stomach
-							</td>
-							<td class="gurmukhi">ਪੇਟ /ਢਿੱਡ
-							</td>
-							<td class="translit">Paet/thid
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Fingers
+								</td>
+								<td class="gurmukhi">ਉਂਗਲੀਆਂ
+								</td>
+								<td class="translit">oongleeya
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Elbow
-							</td>
-							<td class="gurmukhi">ਕੂਹਣੀ
-							</td>
-							<td class="translit">khonee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Leg
+								</td>
+								<td class="gurmukhi">ਲੱਤਾਂ
+								</td>
+								<td class="translit">lath
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Arm
-							</td>
-							<td class="gurmukhi">ਬਾਂਹ / ਬਾਜੂ
-							</td>
-							<td class="translit">bah
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Knee
+								</td>
+								<td class="gurmukhi">ਗੋਡੇ
+								</td>
+								<td class="translit">godha
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Hand
-							</td>
-							<td class="gurmukhi">ਹੱਥ
-							</td>
-							<td class="translit">hath
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Foot
+								</td>
+								<td class="gurmukhi">ਪੈਰ
+								</td>
+								<td class="translit">pehar
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Fingers
-							</td>
-							<td class="gurmukhi">ਉਂਗਲੀਆਂ
-							</td>
-							<td class="translit">oongleeya
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Nails
+								</td>
+								<td class="gurmukhi">ਨਹੁੰ
+								</td>
+								<td class="translit">nohh
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Leg
-							</td>
-							<td class="gurmukhi">ਲੱਤਾਂ
-							</td>
-							<td class="translit">lath
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Lungs
+								</td>
+								<td class="gurmukhi">ਫੇਫੜੇ
+								</td>
+								<td class="translit">fafrda
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Knee
-							</td>
-							<td class="gurmukhi">ਗੋਡੇ
-							</td>
-							<td class="translit">godha
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Ear
+								</td>
+								<td class="gurmukhi">ਕੰਨ
+								</td>
+								<td class="translit">kn
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Foot
-							</td>
-							<td class="gurmukhi">ਪੈਰ
-							</td>
-							<td class="translit">pehar
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Eye
+								</td>
+								<td class="gurmukhi">ਅੱਖ
+								</td>
+								<td class="translit">akh
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Nails
-							</td>
-							<td class="gurmukhi">ਨਹੁੰ
-							</td>
-							<td class="translit">nohh
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Back
+								</td>
+								<td class="gurmukhi">ਪਿਠ / ਢੂਹੀ
+								</td>
+								<td class="translit">pit/toohee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Lungs
-							</td>
-							<td class="gurmukhi">ਫੇਫੜੇ
-							</td>
-							<td class="translit">fafrda
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Mouth
+								</td>
+								<td class="gurmukhi">ਮੂੰਹ
+								</td>
+								<td class="translit">mooh
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Ear
-							</td>
-							<td class="gurmukhi">ਕੰਨ
-							</td>
-							<td class="translit">kn
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Nose
+								</td>
+								<td class="gurmukhi">ਨੱਕ
+								</td>
+								<td class="translit">nakh
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Eye
-							</td>
-							<td class="gurmukhi">ਅੱਖ
-							</td>
-							<td class="translit">akh
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Anus
+								</td>
+								<td class="gurmukhi">ਲੈਟਰੀਨ ਵਾਲੀ ਜਗਾਹ ( ਟੱਟੀ)
+								</td>
+								<td class="translit">laitreen valee jaga (tati)
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Back
-							</td>
-							<td class="gurmukhi">ਪਿਠ / ਢੂਹੀ
-							</td>
-							<td class="translit">pit/toohee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Breastfeeding
+								</td>
+								<td class="gurmukhi">ਸਤਨਪਾਨ
+								</td>
+								<td class="translit">sthnpan
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Mouth
-							</td>
-							<td class="gurmukhi">ਮੂੰਹ
-							</td>
-							<td class="translit">mooh
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Nipple
+								</td>
+								<td class="gurmukhi">ਨਿੱਪਲ (ਸਤਨ ਦੇ ਚੂਚੇ)
+								</td>
+								<td class="translit">nipple
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Nose
-							</td>
-							<td class="gurmukhi">ਨੱਕ
-							</td>
-							<td class="translit">nakh
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Breast
+								</td>
+								<td class="gurmukhi">ਸਤਨ (ਛਾਤੀ)
+								</td>
+								<td class="translit">sthn (chathee)
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Anus
-							</td>
-							<td class="gurmukhi">ਲੈਟਰੀਨ ਵਾਲੀ ਜਗਾਹ ( ਟੱਟੀ)
-							</td>
-							<td class="translit">laitreen valee jaga (tati)
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Ovaries
+								</td>
+								<td class="gurmukhi">ਅੰਡਕੋਸ਼
+								</td>
+								<td class="translit">aondkosh
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Breastfeeding
-							</td>
-							<td class="gurmukhi">ਸਤਨਪਾਨ
-							</td>
-							<td class="translit">sthnpan
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Ova/oocyte
+								</td>
+								<td class="gurmukhi">ਅੰਡੇ
+								</td>
+								<td class="translit">ande
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Nipple
-							</td>
-							<td class="gurmukhi">ਨਿੱਪਲ (ਸਤਨ ਦੇ ਚੂਚੇ)
-							</td>
-							<td class="translit">nipple
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Uterus
+								</td>
+								<td class="gurmukhi">ਬੱਚੇਦਾਨੀ
+								</td>
+								<td class="translit">bachedanee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Breast
-							</td>
-							<td class="gurmukhi">ਸਤਨ (ਛਾਤੀ)
-							</td>
-							<td class="translit">sthn (chathee)
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Testes
+								</td>
+								<td class="gurmukhi">ਅੰਡਕੋਸ਼ (ਹੇਠਲੀ ਗੋਲੀਆਂ)
+								</td>
+								<td class="translit">aondkosh (hatlee goleea)
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Ovaries
-							</td>
-							<td class="gurmukhi">ਅੰਡਕੋਸ਼
-							</td>
-							<td class="translit">aondkosh
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Sperm
+								</td>
+								<td class="gurmukhi">ਸ਼ੁਕਰਾਣੂ
+								</td>
+								<td class="translit">shukraanoo
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Ova/oocyte
-							</td>
-							<td class="gurmukhi">ਅੰਡੇ
-							</td>
-							<td class="translit">ande
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Scrotum
+								</td>
+								<td class="gurmukhi">ਅੰਡਕੋਸ਼ ਦੀ ਥੈਲੀ
+								</td>
+								<td class="translit">aondkosh dee thailee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Uterus
-							</td>
-							<td class="gurmukhi">ਬੱਚੇਦਾਨੀ
-							</td>
-							<td class="translit">bachedanee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Clavicle
+								</td>
+								<td class="gurmukhi">ਹੰਸਲੀ
+								</td>
+								<td class="translit">hmslee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Testes
-							</td>
-							<td class="gurmukhi">ਅੰਡਕੋਸ਼ (ਹੇਠਲੀ ਗੋਲੀਆਂ)
-							</td>
-							<td class="translit">aondkosh (hatlee goleea)
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Nerve
+								</td>
+								<td class="gurmukhi">ਨਸ
+								</td>
+								<td class="translit">ns
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Sperm
-							</td>
-							<td class="gurmukhi">ਸ਼ੁਕਰਾਣੂ
-							</td>
-							<td class="translit">shukraanoo
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Vessel
+								</td>
+								<td class="gurmukhi">ਨਾੜ
+								</td>
+								<td class="translit">narrd
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Scrotum
-							</td>
-							<td class="gurmukhi">ਅੰਡਕੋਸ਼ ਦੀ ਥੈਲੀ
-							</td>
-							<td class="translit">aondkosh dee thailee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Bone
+								</td>
+								<td class="gurmukhi">ਹੱਡੀ
+								</td>
+								<td class="translit">hdi
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Clavicle
-							</td>
-							<td class="gurmukhi">ਹੰਸਲੀ
-							</td>
-							<td class="translit">hmslee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Muscle
+								</td>
+								<td class="gurmukhi">ਮਾਸਪੇਸ਼ੀ
+								</td>
+								<td class="translit">maspeshee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Nerve
-							</td>
-							<td class="gurmukhi">ਨਸ
-							</td>
-							<td class="translit">ns
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Stem cell
+								</td>
+								<td class="gurmukhi">ਅਵਿਕਸਿਤ ਕੋਸ਼ਿਕਾ
+								</td>
+								<td class="translit">aveksth kosheka
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Vessel
-							</td>
-							<td class="gurmukhi">ਨਾੜ
-							</td>
-							<td class="translit">narrd
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Esophagus
+								</td>
+								<td class="gurmukhi">ਭੋਜਨ ਨਲੀ
+								</td>
+								<td class="translit">bhojn nlee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Bone
-							</td>
-							<td class="gurmukhi">ਹੱਡੀ
-							</td>
-							<td class="translit">hdi
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Stomach
+								</td>
+								<td class="gurmukhi">ਪੇਟ (ਢਿੱਡ)
+								</td>
+								<td class="translit">pet (tid)
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Small Intestine
+								</td>
+								<td class="gurmukhi">ਛੋਟੀ ਅੰਤੜੀ
+								</td>
+								<td class="translit">choti anthrdee
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">Large Intestine
+								</td>
+								<td class="gurmukhi">ਵੱਡੀ ਅੰਤੜੀ
+								</td>
+								<td class="translit">vadhi anthrdee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Muscle
-							</td>
-							<td class="gurmukhi">ਮਾਸਪੇਸ਼ੀ
-							</td>
-							<td class="translit">maspeshee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Liver
+								</td>
+								<td class="gurmukhi">ਜਿਗਰ (ਕਲੇਜਾ)
+								</td>
+								<td class="translit">jigarr (kleja)
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Stem cell
-							</td>
-							<td class="gurmukhi">ਅਵਿਕਸਿਤ ਕੋਸ਼ਿਕਾ
-							</td>
-							<td class="translit">aveksth kosheka
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Gall Bladder
+								</td>
+								<td class="gurmukhi">ਪਿੱਤਾ
+								</td>
+								<td class="translit">peta
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Esophagus
-							</td>
-							<td class="gurmukhi">ਭੋਜਨ ਨਲੀ
-							</td>
-							<td class="translit">bhojn nlee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Lungs
+								</td>
+								<td class="gurmukhi">ਫੇਫੜੇ
+								</td>
+								<td class="translit">fefrda
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Stomach
-							</td>
-							<td class="gurmukhi">ਪੇਟ (ਢਿੱਡ)
-							</td>
-							<td class="translit">pet (tid)
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Pancreas
+								</td>
+								<td class="gurmukhi">ਮੇਦਾ
+								</td>
+								<td class="translit">meda
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Small Intestine
-							</td>
-							<td class="gurmukhi">ਛੋਟੀ ਅੰਤੜੀ
-							</td>
-							<td class="translit">choti anthrdee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Kidney
+								</td>
+								<td class="gurmukhi">ਗੁਰਦਾ
+								</td>
+								<td class="translit">gurdha
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Large Intestine
-							</td>
-							<td class="gurmukhi">ਵੱਡੀ ਅੰਤੜੀ
-							</td>
-							<td class="translit">vadhi anthrdee
-							</td>
-						</tr>
+							<tr>
+								<td class="translation">Ureter
+								</td>
+								<td class="gurmukhi">ਪਿਸ਼ਾਬ ਨਲੀ
+								</td>
+								<td class="translit">peshab nlee
+								</td>
+							</tr>
 
-						<tr>
-							<td class="translation">Liver
-							</td>
-							<td class="gurmukhi">ਜਿਗਰ (ਕਲੇਜਾ)
-							</td>
-							<td class="translit">jigarr (kleja)
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Gall Bladder
-							</td>
-							<td class="gurmukhi">ਪਿੱਤਾ
-							</td>
-							<td class="translit">peta
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Lungs
-							</td>
-							<td class="gurmukhi">ਫੇਫੜੇ
-							</td>
-							<td class="translit">fefrda
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Pancreas
-							</td>
-							<td class="gurmukhi">ਮੇਦਾ
-							</td>
-							<td class="translit">meda
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Kidney
-							</td>
-							<td class="gurmukhi">ਗੁਰਦਾ
-							</td>
-							<td class="translit">gurdha
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Ureter
-							</td>
-							<td class="gurmukhi">ਪਿਸ਼ਾਬ ਨਲੀ
-							</td>
-							<td class="translit">peshab nlee
-							</td>
-						</tr>
-
-						<tr>
-							<td class="translation">Urinary Bladder
-							</td>
-							<td class="gurmukhi">ਮਸਾਨਾ (ਪਿਸ਼ਾਬ ਵਾਲੀ ਥੈਲੀ)
-							</td>
-							<td class="translit">msana (peshaab vlee thelee)
-							</td>
-						</tr>
-
-
-
-
+							<tr>
+								<td class="translation">Urinary Bladder
+								</td>
+								<td class="gurmukhi">ਮਸਾਨਾ (ਪਿਸ਼ਾਬ ਵਾਲੀ ਥੈਲੀ)
+								</td>
+								<td class="translit">msana (peshaab vlee thelee)
+								</td>
+							</tr>
+							<tr>
+								<td class="translation">
+								</td>
+								<td class="gurmukhi">
+								</td>
+								<td class="translit">
+								</td>
+							</tr>
+						</tbody>
 					</table>
+					<h3>Logistical Vocabulatory
+</h3>
+					<table class="table table-hover">
 
 
 
 
+						<tr>
+							<td class="translation">Name
+							</td>
+							<td class="gurmukhi">ਨਾਮ
+							</td>
+							<td class="translit">naam
+							</td>
+						</tr>
 
+						<tr>
+							<td class="translation">Age
+							</td>
+							<td class="gurmukhi">ਉਮਰ
+							</td>
+							<td class="translit">umar
+							</td>
+						</tr>
 
+						<tr>
+							<td class="translation">Date
+							</td>
+							<td class="gurmukhi">ਤਾਰੀਖ / ਤਰੀਕ
+							</td>
+							<td class="translit">tareekh
+							</td>
+						</tr>
 
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Logistical Vocabulatory
+						<tr>
+							<td class="translation">Date of Birth
+							</td>
+							<td class="gurmukhi">ਜਨਮ ਤਰੀਕ
+							</td>
+							<td class="translit">janam tareekh
+							</td>
+						</tr>
 
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Nameਨਾਮ naam
+						<tr>
+							<td class="translation">Height
+							</td>
+							<td class="gurmukhi">ਲੰਬਾਈ (ਕੱਦ)
+							</td>
+							<td class="translit">lambhayee
+							</td>
+						</tr>
 
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Ageਉਮਰ umar
-
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Dateਤਾਰੀਖ / ਤਰੀਕ tareekh
-
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Date of Birthਜਨਮ ਤਰੀਕ janam tareekh
-
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Heightਲੰਬਾਈ (ਕੱਦ) lambhayee
-
-					<tr>
-						<td class="translation">
-						</td>
-						<td class="gurmukhi">
-						</td>
-						<td class="translit">
-						</td>
-					</tr>Weightਭਾਰ par
-
+						<tr>
+							<td class="translation">Weight
+							</td>
+							<td class="gurmukhi">ਭਾਰ
+							</td>
+							<td class="translit">par
+							</td>
+						</tr>
+					</table>
 					</li>
 
 				</p>
@@ -628,9 +621,22 @@
 
 	<div id="cd-loading-bar" data-scale="1" class="index"></div>
 	<! lateral loading bar >
-	<script src="js/jquery-2.1.4.js"></script>
-	<script src="js/velocity.min.js"></script>
-	<script src="js/main.js"></script>
+
+
+
+
+
+	<script>
+		var $rows = $('#table tr');
+		$('#search').keyup(function() {
+			var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+
+			$rows.show().filter(function() {
+				var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+				return !~text.indexOf(val);
+			}).hide();
+		});
+	</script>
 	<! Resource jQuery >
 </body>
 
