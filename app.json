@@ -1,0 +1,16 @@
+{
+  "name": "pmdictionary",
+  "description": "Punjabi Medical Dictionary",
+  "scripts": {
+  },
+  "env": {
+  },
+  "addons": [
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "urn:buildpack:heroku/php"
+    }
+  ]
+}
