@@ -423,6 +423,7 @@ header h1 {
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
+  font-size:1.4rem;
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-trigger {
@@ -482,7 +483,6 @@ header h1 {
 
 .cd-faq-content p {
   font-size: 14px;
-  font-size: 0.875rem;
   line-height: 1.4;
   color: #6c7d8e;
 }
