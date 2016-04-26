@@ -35,7 +35,9 @@ a:hover, a:focus {
 .translit{
   font-size: 175%;
 }
-
+.cd-faq-categories{
+  padding:0px !important;}
+}
 
 
 /* --------------------------------
@@ -181,6 +183,7 @@ header h1 {
   .cd-faq-categories {
     width: 20%;
     float: left;
+    padding:0px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
   .cd-faq-categories a {
@@ -239,6 +242,7 @@ header h1 {
   }
   .no-js .cd-faq-categories {
     position: relative;
+    padding:0px
   }
 }
 
@@ -370,6 +374,7 @@ header h1 {
 }
 .cd-faq-group.selected {
   display: block;
+  margin-top: 100px;
 }
 .cd-faq-group .cd-faq-title {
   background: transparent;
