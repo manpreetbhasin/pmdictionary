@@ -1,26 +1,22 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Thumbnail Gallery](http://startbootstrap.com/template-overviews/thumbnail-gallery/)
 
-[Thumbnail Gallery](http://startbootstrap.com/template-overviews/thumbnail-gallery/) is a responsive thumbnail grid template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-## Getting Started
+## To work locally
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
+This is static site. You don't need server to run locally. Just checkout the git repo.
 * Fork this repository on GitHub
 
-## Bugs and Issues
+## List of current bugs
+Functionality issues:
+* Finish up contact page - Create form : (Gurleen- what needs to go on this page - ? ) you want to give contact information or some facebook etc social network.
+* Fix search in both internal medicine as well as general questions
+* Slider buttons are not hooked to question pages
+* Improve UI of the vocabulary page. - Mostly for smaller screens.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-thumbnail-gallery/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/thumbnail-gallery/).
 
-## Creator
-
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## Projects from where the code was taken from:
+* [Thumbnail Gallery](http://startbootstrap.com/template-overviews/thumbnail-gallery/)
+* [Cody house FAQ's](https://codyhouse.co/gem/css-faq-template/)
 
 ## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-thumbnail-gallery/blob/gh-pages/LICENSE) license.
+This repo is released under [WTFPL](http://www.wtfpl.net/) - That means exactly as the license says. Do WT F(un) PL
