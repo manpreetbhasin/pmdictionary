@@ -819,10 +819,16 @@
             }).hide();
             $('.cd-faq-categories').hide();
             $('.page-header').hide();
+            $('.cd-faq-title').hide();
             $('.cd-faq-items').css('padding-left','0');
+            // $('.cd-faq-group').addClass('square').removeClass('cd-faq-group');
           }
           else{
             $('.page-header').show();
+            $('.cd-faq-title').show();
+            $('.cd-faq-categories').show();
+            $('.cd-faq-items').css('padding-left','220px');
+            // $('.square').addClass('cd-faq-group').removeClass('square');
           }
         });
     </script>
