@@ -262,15 +262,6 @@
                                 <!-- cd-faq-content -->
                             </li>
 
-
-
-
-
-
-
-
-
-
                         </ul>
                         <ul id="gastrointestinal" class="cd-faq-group">
                             <li class="cd-faq-title">
@@ -817,12 +808,22 @@
     <script src="js/faq.js"></script>
     <script>
         var $rows = $('.cd-faq-trigger');
+
         $('#search').keyup(function() {
+          if(this.value.length !==0){
             var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
             $rows.show().filter(function() {
                 var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
                 return !~text.indexOf(val);
+
             }).hide();
+            $('.cd-faq-categories').hide();
+            $('.page-header').hide();
+            $('.cd-faq-items').css('padding-left','0');
+          }
+          else{
+            $('.page-header').show();
+          }
         });
     </script>
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
